@@ -1,3 +1,8 @@
+html {
+    margin: none;
+    padding: none;
+}
+
 body {
    font-family: Georgia, 'Times New Roman', Times, serif; 
 }
@@ -7,4 +12,16 @@ body {
     color: brown;
     width: 800px;
     height: 1200px;
+}
+
+#resume {
+    background-color: chocolate;
+    width: auto;
+    height: 500px;
+}
+
+#contact {
+    background-color: grey;
+    width: auto;
+    height: 500px;
 }
