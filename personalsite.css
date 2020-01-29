@@ -1,5 +1,7 @@
-
-body {
+html {
+    scroll-behavior: smooth;
+}
+#container {
     margin: 0;
    font-family: Georgia, 'Times New Roman', Times, serif; 
 }
