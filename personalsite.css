@@ -1,9 +1,13 @@
 html {
     scroll-behavior: smooth;
 }
-#container {
+#body {
     margin: 0;
    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+
+a{
+    text-decoration: none;
 }
 
 #projects {
