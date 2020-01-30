@@ -2,6 +2,9 @@
 
 html {
     font-family: 'Montserrat', sans-serif;
-    background-color: #051246;
-    color: #FDFEFF;
+}
+
+#container {
+    background-color: #08153c;
+background-image: url(black-twill.png);
 }
