@@ -4,11 +4,13 @@ html {
     font-family: 'Montserrat', sans-serif;
     background-color: #08153c;
     background-image: url(black-twill.png);
+    scroll-behavior: smooth;
 }
 
-a {
-    text-decoration: none;
+body {
+    margin: 0;
 }
+
 
 #container {
     width: 50%;
@@ -16,14 +18,212 @@ a {
     margin-right: auto;
     margin-top: 0;
     padding-top: 0;
-    background-color: #152550;
+    background-color: #FDFEFF;
+    border-radius: 5px;
 
+}
+
+#title {
+    background-color: #152550;
+    height: 175px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .usfa {
     float: left;
+    padding-right: 27px;
+}
+
+.grafa{
+    float: right
 }
 
 .host {
-    float: right;
+    color: #FDFEFF;
+    font-size: medium;
+
 }
+
+h2.hosted {
+    font-size: 18px;
+}
+
+.hosted {
+    color: #F2CF2E;
+}
+
+#nav{
+    background-color: #F2CF2E;
+    height: 30px;
+    text-align: center;   
+    position: sticky; top: 0; 
+    z-index: 5;
+}
+
+#nav ul {
+    list-style-type: none; 
+    margin: 0;
+    padding-left: 110px;
+    overflow: hidden;
+    display: flex;
+    float: left;
+}
+
+li {
+    display: block;
+    text-align: center;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    padding: 8px;
+    text-align: center;
+   
+}
+
+li a:hover {
+    background-color: #FDFEFF;
+    color: #08153c;
+    overflow: hidden;
+  }
+
+
+.shadow {
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+
+
+#location {
+    background-color: white;
+    height: 500px;
+    padding: 25px;
+    font-size: 16;
+}
+
+.locate {
+    color: #101c3d;
+    text-align: center;
+    font-weight: bold;
+}
+
+#hotels{
+    padding-top: 20px;
+    background-color: rgb(255, 235, 144);
+    height: 500px;
+}
+
+#activities {
+    background-color: rgb(250, 223, 104);
+    height: 500px;
+}
+
+.strong {
+    font-size: 20px;
+    color: #152550;
+}
+
+h3 {
+    color: #C41E2F;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  
