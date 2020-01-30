@@ -5,3 +5,7 @@ html {
     background-color: #08153c;
     background-image: url(black-twill.png);
 }
+
+a {
+    text-decoration: none;
+}
