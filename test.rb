@@ -1,3 +1,3 @@
 ls = "Hello"
 print(ls)
-print()
+print("")
