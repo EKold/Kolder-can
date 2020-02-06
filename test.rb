@@ -7,6 +7,4 @@ i = 1
 
 while i < 10
     puts(i)
-    puts("Mollie is the cutest")
-    i += 1
 end
