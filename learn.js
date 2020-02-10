@@ -1,1 +1,1 @@
-console.log("hello World");
+console.log("IM GONNA KILL MYSELF");

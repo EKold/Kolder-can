@@ -28,25 +28,14 @@
 
 f_name = "Ethan"
 l_name = "Kolderman"
+m_name = "Joseph"
 puts(f_name +" "+ l_name)
-puts(f_name + " Joseph " + l_name)
+puts(f_name + " #{m_name} "+ l_name)
 cf_name = f_name.upcase
 cl_name = l_name.upcase
 puts(cf_name+" "+ cl_name)
-
 name = (f_name + l_name)
 puts(name.length)
-
-
-
-
-
-
-
-
-
-
-
 
 # Section 3 worth 20 points
 #
@@ -65,8 +54,11 @@ puts(" ","Movies sorted in Alphabetical Order", "------------------")
 puts(movies)
 print(movies,"\n")
 
-
-
+i = 1
+while  i < 10 do
+    puts(i)
+    i += 1
+end
 # Section 4 worth 20 points
 #
 # Meals are important and there are a lot of details to keep track of for a meal.
