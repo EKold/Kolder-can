@@ -16,7 +16,9 @@
 # 
 # Verify with Dr. Monberg that either Ruby 2.2.2 is installed on your computer or you have setup an account
 # on a server like Cloud9 https://medium.com/@krissanawat/initial-setup-enviroment-430f11200b4a
-#
+
+puts(" ","Ruby Assignment", "-"*15, " ")
+
 # Section 2 worth 20 points
 #
 # 1. Create two string variables for your first name and last name.
@@ -29,13 +31,15 @@
 f_name = "Ethan"
 l_name = "Kolderman"
 m_name = "Joseph"
-puts(f_name +" "+ l_name)
-puts(f_name + " #{m_name} "+ l_name)
 cf_name = f_name.upcase
 cl_name = l_name.upcase
-puts(cf_name+" "+ cl_name)
 name = (f_name + l_name)
-puts(name.length)
+
+puts("Section 2", "="*9)
+print("Name: ", f_name +" "+ l_name, "\n")
+print("Name with middle name interpolated: ", f_name + " #{m_name} "+ l_name, "\n")
+print("Name in Capitals: ", cf_name+" "+ cl_name, "\n")
+print("Number of Characters in my name: ", name.length, "\n")
 
 # Section 3 worth 20 points
 #
@@ -43,22 +47,12 @@ puts(name.length)
 # 2. Display the first element of the array.
 # 3. Display all of the titles sorted in alphabetical order
 
-puts("","Section 3","=========")
-
+puts("","Section 3","="*9)
 movies = ["Rocky", "Zombieland", "The Princess Bride", "The Dark Knight", "Forrest Gump"]
-
-puts(movies[0])
-
+print("First element of the array: ",movies[0], "\n")
 movies = movies.sort
-puts(" ","Movies sorted in Alphabetical Order", "------------------")
-puts(movies)
-print(movies,"\n")
+print("Movies in order: ", movies, "\n")
 
-i = 1
-while  i < 10 do
-    puts(i)
-    i += 1
-end
 # Section 4 worth 20 points
 #
 # Meals are important and there are a lot of details to keep track of for a meal.
@@ -66,11 +60,58 @@ end
 # 1. Create a Meal Class. 
 # 2. Have at least 5 variables, with at least one string, integer and boolean type in your Meal class.
 # 3. Create a method for the class in addition to the initialize method
-# 4. Create and dsiplay three instances of meals.
+# 4. Create and display three instances of meals.
 # 5. Call your method on all three instances.
-#
+
+class Meal
+    def initialize(type, name, amount, calories, utensil)
+        @type = type
+        @name = name
+        @amount = amount
+        @calories = calories
+        @utensil = utensil
+    end
+
+    def display()
+        print("Type of cuisine: ","#{@type}", "\n")
+        print("Name of Food: ","#{@name}", "\n")
+        print("Amount present: ","#{@amount}", "\n")
+        print("Number of calories: ","#{@calories}", "\n")
+        print("Needs to use an utensil: ","#{@utensil}", "\n")
+    end
+end
+
+spaghetti = Meal.new("Italian", "Spaghetti", "1/4 lbs", 650, true)
+naan = Meal.new("Indian", "Naan Bread", "1/2 lbs", 200, false)
+dumpling = Meal.new("Chinese", "Dumplings", "1/8 lbs", 450, true)
+
+puts(" ", "Section 4", "="*9)
+spaghetti.display
+puts("-"*20)
+naan.display
+puts("-"*20)
+dumpling.display
 # Section 5 
 # What is your favorite book, website, youtube series, forum, or tutorial for learning Ruby that you have
 # discovered in addition to the course materials?
 # Display the title and link of your favorite resource.
 # Display two sentences that explain why you found that resource useful.
+
+puts(" ", "Section 5", "="*9)
+my name is ethan and im chilly 
+i cannot stop kissing mollie
+we are so cute
+YEAH
+smell
+fred.jpg
+"bitch"
+^_____________________^
+:3
+this keyboard sucks a$$
+too wide
+tiny pinkies
+ayal take it away
+if mollie = cute, then
+    project(class assignment) = unimportant
+project = finished 
+i fixed it ethan
