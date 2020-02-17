@@ -1,1 +1,2 @@
-console.log("IM GONNA KILL MYSELF");
+let num = prompt("What is your name? ")
+console.log("Hello ", num)
