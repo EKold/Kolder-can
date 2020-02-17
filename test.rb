@@ -98,20 +98,4 @@ dumpling.display
 # Display two sentences that explain why you found that resource useful.
 
 puts(" ", "Section 5", "="*9)
-my name is ethan and im chilly 
-i cannot stop kissing mollie
-we are so cute
-YEAH
-smell
-fred.jpg
-"bitch"
-^_____________________^
-:3
-this keyboard sucks a$$
-too wide
-tiny pinkies
-ayal take it away
-if mollie = cute, then
-    project(class assignment) = unimportant
-project = finished 
-i fixed it ethan
+
