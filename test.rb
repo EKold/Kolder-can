@@ -31,66 +31,71 @@ puts(" ","Ruby Assignment", "-"*15, " ")
 f_name = "Ethan"
 l_name = "Kolderman"
 m_name = "Joseph"
-cf_name = f_name.upcase
-cl_name = l_name.upcase
+cf_name = f_name.upcase()
+cl_name = l_name.upcase()
 name = (f_name + l_name)
+array_name = name.chars()
 
 puts("Section 2", "="*9)
 print("Name: ", f_name +" "+ l_name, "\n")
 print("Name with middle name interpolated: ", f_name + " #{m_name} "+ l_name, "\n")
 print("Name in Capitals: ", cf_name+" "+ cl_name, "\n")
 print("Number of Characters in my name: ", name.length, "\n")
+print("Name when iterated over each element: ", array_name, "\n")
 
 # Section 3 worth 20 points
 #
-# 1. Create an array with a list of the titles of your 5 favorite movies
+# 1. Create an array with a list of the titles of your 5 favorite cities
 # 2. Display the first element of the array.
-# 3. Display all of the titles sorted in alphabetical order
+# 3. Display all of the cities sorted in alphabetical order
 
 puts("","Section 3","="*9)
-movies = ["Rocky", "Zombieland", "The Princess Bride", "The Dark Knight", "Forrest Gump"]
-print("First element of the array: ",movies[0], "\n")
-movies = movies.sort
-print("Movies in order: ", movies, "\n")
+cities = ["Rome", "Paris", "Grand Rapids", "Los Angeles", "San Francisco"]
+print("First element of the array: ", cities[0], "\n")
+cities = cities.sort
+print("Cities in order: ", cities, "\n")
 
 # Section 4 worth 20 points
 #
-# Meals are important and there are a lot of details to keep track of for a meal.
+# There are lots of uses, qualities and parts associated with cars.
 #
-# 1. Create a Meal Class. 
-# 2. Have at least 5 variables, with at least one string, integer and boolean type in your Meal class.
-# 3. Create a method for the class in addition to the initialize method
-# 4. Create and display three instances of meals.
+# 1. Create a Car Class. 
+# 2. Have at least 5 variables, with at least one string, integer and boolean type in your Car class.
+# 3. Create a method for the Car class in addition to the initialize method
+# 4. Create and dsiplay three instances of a car.
 # 5. Call your method on all three instances.
 
-class Meal
-    def initialize(type, name, amount, calories, utensil)
+puts("","Section 4","="*9)
+
+class Car
+
+    def initialize(type, maker ,model, year,fourwheel)
         @type = type
-        @name = name
-        @amount = amount
-        @calories = calories
-        @utensil = utensil
+        @maker = maker
+        @model = model
+        @year = year
+        @fourwheel = fourwheel
     end
 
     def display()
-        print("Type of cuisine: ","#{@type}", "\n")
-        print("Name of Food: ","#{@name}", "\n")
-        print("Amount present: ","#{@amount}", "\n")
-        print("Number of calories: ","#{@calories}", "\n")
-        print("Needs to use an utensil: ","#{@utensil}", "\n")
+        puts("Type of Car: #{@type}")
+        puts("Maker: #{@maker}")
+        puts("Model of Car: #{@model}")
+        puts("Year Made: #{@year}")
+        puts("Four Wheel Drive: #{@fourwheel}")
     end
 end
 
-spaghetti = Meal.new("Italian", "Spaghetti", "1/4 lbs", 650, true)
-naan = Meal.new("Indian", "Naan Bread", "1/2 lbs", 200, false)
-dumpling = Meal.new("Chinese", "Dumplings", "1/8 lbs", 450, true)
+s_legacy = Car.new("Sedan", "Subaru" ,"Legacy", 2012, false)
+c_camaro = Car.new("Sedan", "Chevy" ,"Camaro", 1969, false)
+t_cruiser = Car.new("SUV", "Toyota", "FJ Cruiser", 2019, true)
 
-puts(" ", "Section 4", "="*9)
-spaghetti.display
+s_legacy.display
 puts("-"*20)
-naan.display
+c_camaro.display
 puts("-"*20)
-dumpling.display
+t_cruiser.display
+
 # Section 5 
 # What is your favorite book, website, youtube series, forum, or tutorial for learning Ruby that you have
 # discovered in addition to the course materials?
@@ -98,4 +103,12 @@ dumpling.display
 # Display two sentences that explain why you found that resource useful.
 
 puts(" ", "Section 5", "="*9)
+puts("My favorite youtube series for learning ruby is Ruby Programming by Jake Day Williams.",
+     "The Videos he makes are concise, informative, and he gives great examples.",
+     "He also spaces out the videos so only one topic is on each video which makes it really",
+     "easy to watch just a few at a time.",
+     "here is the link below: ",
+     ("-"*46),
+     "Ruby Programming: https://youtu.be/8I539U5lXWY ")
 
+puts(" ","-"*33,"WRA 410 Ruby Assignment Completed") 
